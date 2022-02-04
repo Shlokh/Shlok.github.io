@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+   <style type="text/css">
+      button {
+         font-family: sans-serif;
+         border: none;
+         padding: 10px 30px;
+         font-size: 20px;
+         outline: none;
+         margin: 10px;
+      }
+      #btn {
+         background-color: rgb(23, 52, 89);
+         color: #f8f9f9;
+         box-shadow: .5px .5px 1px 2px #000000;      
+      }
+  div {
+         height: 2000px;
+         line-height: 2000px;
+         color: white;
+         text-align: center;
+         padding-left: 20px;
+         padding-right: 20px;
+      }
+   </style>
+</head>
+<body>
+   <button id="btn"> Show a Dialog </button>
+
+   <script type="text/javascript">
+      document.getElementById("btn").onclick = function() {
+         alert("I am a dialog  box!")
+      }
+   </script>
+   <div onclick="changeColor(this)" style="background-color: red;">
+      Tap me to change my color!
+   </div>
+
+   <script>
+      function changeColor(element) {
+         var currentColor = element.style.backgroundColor;
+         if(currentColor =="blue") {
+            element.style.backgroundColor = "yellow";
+         } else {
+            element.style.backgroundColor = "blue";
+         }
+      }
+   </script> 
+<a href="https://i.ibb.co/KWw8zyZ/peakpx.jpg"><h1>this is a link</h1></a>
+
+</body>
+</html>
